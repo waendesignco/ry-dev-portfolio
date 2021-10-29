@@ -25,6 +25,12 @@ Variables
   --clr-primary-8: hsl(0, 65%, 83%);
   --clr-primary-9: hsl(0, 60%, 88%);
   --clr-primary-10: hsl(0, 54%, 93%);
+  /* color palette */
+  --clr-palette-1: hsl(265, 12%, 28%);
+  --clr-palette-2: hsl(268, 12%, 79%);
+  --clr-palette-3: hsl(26, 100%, 92%);
+  --clr-palette-4: hsl(0, 77%, 76%);
+
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(265, 12%, 28%);
   --clr-grey-2: hsl(267, 11%, 35%);
@@ -227,6 +233,7 @@ Navbar
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    align-items: center;
     -webkit-column-gap: 2rem;
     -moz-column-gap: 2rem;
     column-gap: 2rem;
@@ -434,7 +441,7 @@ Skills
 ===============
 */
 /* bg-grey in globals */
-.skill {
+.skills {
   background: var(--clr-white);
   padding: 3rem 1.5rem;
   margin-bottom: 2rem;
@@ -467,7 +474,7 @@ Skills
 .service:hover .underline {
   background: var(--clr-white);
 }
-.tool {
+.tools {
   background: var(--clr-white);
   padding: 3rem 1.5rem;
   margin-bottom: 2rem;
@@ -809,95 +816,12 @@ Timeline
 }
 /*
 =============== 
-Blog
-===============
-*/
-.blog {
-  background: var(--clr-grey-10);
-}
-.card {
-  height: 27rem;
-  position: relative;
-  /* talk later */
-  -webkit-perspective: 1500px;
-  perspective: 1500px;
-}
-.card-side {
-  -webkit-transition: all 2s linear;
-  transition: all 2s linear;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: var(--radius);
-  -webkit-transform: translate3d(0, 0, 0);
-  visibility: visible;
-}
-.card-front {
-  background: var(--clr-white);
-}
-.card-back {
-  background: var(--clr-primary-10);
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  display: grid;
-  place-items: center;
-}
-.card:hover .card-front {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-}
-.card:hover .card-back {
-  -webkit-transform: rotateY(0);
-  transform: rotateY(0);
-}
-/* rest of the styles */
-.card-info {
-  padding: 1rem 1.5rem;
-}
-.card-front img {
-  height: 13rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-top-left-radius: var(--radius);
-  border-top-right-radius: var(--radius);
-}
-.card-footer {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  -webkit-box-align: center;
-  align-items: center;
-}
-.card-footer img {
-  width: 2rem;
-  height: 2rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.card-footer p {
-  margin-bottom: 0;
-  text-transform: uppercase;
-  justify-self: end;
-  color: var(--clr-primary-5);
-  font-size: 0.85rem;
-}
-.blog-center {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-  gap: 3rem 1rem;
-}
-/*
-=============== 
 Footer
 ===============
 */
 .footer {
   padding-bottom: 2rem;
-  background: #222;
+  background: #453e4f;
   display: grid;
   place-items: center;
 }
@@ -938,7 +862,7 @@ Single Page
 
 /*
 =============== 
-Products Page
+Projects Page
 ===============
 */
 .projects-hero {
