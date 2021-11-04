@@ -171,7 +171,6 @@ p {
     width: 95vw;
   }
 }
-/* added during recording */
 .underline {
   width: 5rem;
   height: 0.25rem;
@@ -321,7 +320,7 @@ Sidebar
 }
 .social-icon {
   font-size: 1.5rem;
-  color: var(--clr-grey-1);
+  color: var(--clr-palette-1);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
@@ -402,105 +401,7 @@ Hero
   border-radius: var(--radius);
   position: relative;
 }
-/*
-=============== 
-About
-===============
-*/
-/* section title added to globals */
-.about-title {
-  text-align: left;
-  margin-bottom: 2rem;
-}
-.about-title .underline {
-  margin-left: 0;
-}
-.about-center {
-  display: grid;
-  gap: 3rem 2rem;
-}
-.about-img {
-  justify-self: center;
-}
-@media screen and (min-width: 992px) {
-  .about-center {
-    grid-template-columns: 1fr 1fr;
-  }
-  .about-img {
-    position: relative;
-  }
-  .about-img::before {
-    left: -2rem;
-  }
-  .about-info {
-    align-self: center;
-  }
-}
-/*
-=============== 
-Skills
-===============
-*/
-/* bg-grey in globals */
-.skills {
-  background: var(--clr-white);
-  padding: 3rem 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: var(--radius);
-  text-align: center;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.skill-icon {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-.service .underline {
-  width: 3rem;
-  height: 0.12rem;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.service p {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.service:hover {
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
-}
-.service:hover p {
-  color: var(--clr-white);
-}
-.service:hover .underline {
-  background: var(--clr-white);
-}
-.tools {
-  background: var(--clr-white);
-  padding: 3rem 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: var(--radius);
-  text-align: center;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-
-@media screen and (min-width: 676px) {
-  .skills-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .skills-center {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-/* talk about small screen 
-without grid different setup */
+/* small screen without grid different setup */
 /*
 =============== 
 Projects
@@ -608,7 +509,111 @@ Projects
   .project-5 {
     grid-area: e;
   }
+}
+/*
+=============== 
+Skills
+===============
+*/
+/* bg-grey in globals */
+.skills {
+  background: var(--clr-palette-3);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.skill {
+  margin-bottom: 1.25rem;
+}
+.skill p {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: var(--clr-primary-1);
+}
+.service .underline {
+  width: 3rem;
+  height: 0.12rem;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.service p {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.service:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+.service:hover p {
+  color: var(--clr-white);
+}
+.service:hover .underline {
+  background: var(--clr-white);
+}
+.tools {
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
 
+@media screen and (min-width: 676px) {
+  .skills-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .skills-center {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*
+=============== 
+About
+===============
+*/
+/* section title added to globals */
+.about-title {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.about-title .underline {
+  margin-left: 0;
+}
+.about-center {
+  display: grid;
+  gap: 3rem 2rem;
+}
+.about-img {
+  justify-self: center;
+}
+@media screen and (min-width: 992px) {
+  .about-center {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-img {
+    position: relative;
+  }
+  .about-img::before {
+    left: -2rem;
+  }
+  .about-info {
+    align-self: center;
+  }
 }
 /*
 =============== 
@@ -690,10 +695,10 @@ Connect
 }
 /*
 =============== 
-Skills
+Skills - in percentage, could be developed later
 ===============
 */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .skills-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -752,6 +757,7 @@ Skills
 .skill-text-80 {
   left: 80%;
 }
+*/
 /*
 =============== 
 Timeline
