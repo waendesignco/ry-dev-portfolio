@@ -848,15 +848,37 @@ Footer
 }
 /*
 =============== 
-Single Page
+Single Project Page
 ===============
 */
 .single-page {
-  background: var(--clr-primary-10);
+  background: var(--clr-white);
   min-height: calc(100vh - 5rem - 198px);
 }
 .page-info {
   max-width: 700px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 5em;
+}
+.project-img {
+  height: auto;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.project-photo {
+  max-width: 25rem;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: var(--radius);
+  position: relative;
+}
+.project-text {
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
 }
 .page-info a {
   /*text-transform: uppercase;*/
