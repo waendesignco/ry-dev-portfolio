@@ -58,7 +58,9 @@ Variables
 Global Styles
 ===============
 */
-
+html {
+  scroll-behavior: smooth;
+}
 *,
 ::after,
 ::before {
@@ -69,7 +71,7 @@ Global Styles
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-white);
-  color: var(--clr-grey-1);
+  color: var(--clr-palette-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -336,11 +338,11 @@ Sidebar
   border: transparent;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  color: #bb2525;
+  color: var(--clr-palette-4);
   cursor: pointer;
 }
 .close-btn:hover {
-  color: #e66b6b;
+  color: var(--clr-palette-3);
 }
 /*
 =============== 
@@ -799,7 +801,7 @@ Timeline
 .timeline-item:last-child {
   border-bottom-left-radius: 0;
 }
-.number {
+.milestone {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -814,10 +816,10 @@ Timeline
   color: var(--clr-primary-1);
   font-weight: bold;
 }
-.timeline-item:nth-child(even) .number {
+.timeline-item:nth-child(even) .milestone {
   left: 0;
 }
-.timeline-item:nth-child(odd) .number {
+.timeline-item:nth-child(odd) .milestone {
   right: 0;
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
@@ -899,7 +901,7 @@ Projects Page
 */
 .projects-hero {
   height: 40vh;
-  background: var(--clr-primary-10);
+  background: var(--clr-palette-3);
   display: grid;
   place-items: center;
 }
