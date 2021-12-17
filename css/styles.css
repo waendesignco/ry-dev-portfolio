@@ -609,6 +609,7 @@ About
 }
 .about-img {
   justify-self: center;
+  align-self: center;
 }
 @media screen and (min-width: 992px) {
   .about-center {
@@ -777,7 +778,7 @@ Timeline
   max-width: 40rem;
 }
 .timeline-item {
-  border-top: 2px dashed var(--clr-primary-5);
+  border-top: 2px dashed var(--clr-palette-4);
   margin: 0;
   padding: 4rem 2rem;
   position: relative;
@@ -789,7 +790,6 @@ Timeline
   border-left: 2px dashed var(--clr-primary-5);
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
-
   margin-right: 2rem;
   padding-right: 0;
 }
