@@ -19,7 +19,7 @@ Variables
   --clr-primary-4: hsl(0, 53%, 59%);
   /* primary/main color */
   --clr-primary-5: hsl(0, 77%, 76%);
-  /* lighter shades of primary color */
+  /* lighter tints of primary color */
   --clr-primary-6: hsl(0, 74%, 78%);
   --clr-primary-7: hsl(0, 70%, 80%);
   --clr-primary-8: hsl(0, 65%, 83%);
@@ -30,8 +30,7 @@ Variables
   --clr-palette-2: hsl(268, 12%, 79%);
   --clr-palette-3: hsl(26, 100%, 92%);
   --clr-palette-4: hsl(39, 87%, 78%);
-
-  /* darkest grey - used for headings */
+  /* darkest grey used for headings */
   --clr-grey-1: hsl(265, 12%, 28%);
   --clr-grey-2: hsl(267, 11%, 35%);
   --clr-grey-3: hsl(266, 11%, 41%);
@@ -283,12 +282,9 @@ Sidebar
   background: var(--clr-grey-10);
   z-index: 4;
   display: grid;
-  /* align-items: center;
-  justify-content: center; */
   place-items: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  /* add later */
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
@@ -317,7 +313,7 @@ Sidebar
   display: grid;
   margin-top: 3rem;
   width: 20rem;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 .social-icon {
@@ -349,7 +345,6 @@ Sidebar
 Hero
 ===============
 */
-/* underline added to globals */
 .hero .underline {
   margin-bottom: 0.5rem;
   margin-left: 0;
@@ -589,7 +584,6 @@ Skills
 About
 ===============
 */
-/* section title added to globals */
 #about {
   padding: 3rem 0;
 }
@@ -652,7 +646,6 @@ Connect
   width: 100%;
   height: 100%;
   background: var(--clr-white);
-  /* background: rgba(0, 0, 0, 0.6); */
   opacity: 0.7;
   z-index: -1;
 }
@@ -860,7 +853,6 @@ Projects Page
   text-align: right;
   color: var(--clr-primary-5);
 }
-
 .project-footer a {
   color: var(--clr-primary-5);
   text-transform: capitalize;

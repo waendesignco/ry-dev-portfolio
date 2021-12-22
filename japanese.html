@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,8 +58,8 @@
         <ul class="sidebar-links">
           <li><a href="index.html">home</a></li>
           <li><a href="projects.html">projects</a></li>
-          <li><a href="index.html #skills">skills</a></li>
-          <li><a href="index.html #about">about</a></li>
+          <li><a href="index.html#skills">skills</a></li>
+          <li><a href="index.html#about">about</a></li>
           <li><a href="contact.html">contact</a></li>
           <li><a href="japanese.html">Japanese</a></li>
         </ul>
@@ -86,7 +86,7 @@
     <!-- header -->
     <header class="hero">
       <div class="section-center hero-center">
-        <article class="hero-info">
+        <div class="hero-info">
           <h1>Hi, i'm Ryoko Yamamoto</h1>
           <h4>フロントエンド &amp; ワードプレスディベロッパー/プログラマー</h4>
           <div class="underline"></div>
@@ -110,10 +110,10 @@
               </a>
             </li>
           </ul>
-        </article>
-        <article class="hero-img">
+        </div>
+        <div class="hero-img">
           <img src="./images/ryoko-ollie.png" class="hero-photo" alt="ryoko yamamoto" />
-        </article>
+        </div>
       </div>
     </header>
     <!-- end of header -->
@@ -130,7 +130,7 @@
       <!--end of section title -->
       <div class="section-center projects-center">
         <!-- single project -->
-        <a href="projects.html" class="project-1">
+        <a href="projects.html#accelerate" class="project-1">
           <article class="project">
             <img
               src="./images/accelerate.png"
@@ -146,7 +146,7 @@
         </a>
         <!-- end of single project -->
         <!-- single project -->
-        <a href="projects.html" class="project-2">
+        <a href="projects.html#unplugged" class="project-2">
           <article class="project">
             <img
               src="./images/unplugged.png"
@@ -162,7 +162,7 @@
         </a>
         <!-- end of single project -->
         <!-- single project -->
-        <a href="projects.html" class="project-3">
+        <a href="projects.html#sticky-note" class="project-3">
           <article class="project">
             <img
               src="./images/sticky-note.png"
@@ -178,7 +178,7 @@
         </a>
         <!-- end of single project -->
         <!-- single project -->
-        <a href="projects.html" class="project-4">
+        <a href="projects.html#guess-the-word" class="project-4">
           <article class="project">
             <img
               src="./images/guess-the-word.png"
@@ -194,7 +194,7 @@
         </a>
         <!-- end of single project -->
         <!-- single project -->
-        <a href="projects.html #tulip-town" class="project-5">
+        <a href="projects.html#tulip-town" class="project-5">
           <article class="project">
             <img
               src="./images/tulip-town.png"
@@ -219,7 +219,7 @@
         <div class="underline"></div>
       </div>
       <div class="skills-center section-center">
-        <article class="skills">
+        <div class="skills">
           <i class="fas fa-code skill-icon"></i>
           <h4>フロントエンド　ディベロップメント</h4>
           <div class="underline"></div>
@@ -230,8 +230,8 @@
            <li class="btn">Responsive sites</li>
            <li class="btn">Custom sites</li>
           </ul> 
-        </article>
-        <article class="skills">
+        </div>
+        <div class="skills">
           <i class="fas fa-sitemap skill-icon"></i>
           <h4>バックエンド　ディベロップメント</h4>
           <div class="underline"></div>
@@ -239,8 +239,8 @@
            <li class="btn">PHP</li>
            <li class="btn">Ruby</li>
           </ul>
-        </article>
-        <article class="skills">
+        </div>
+        <div class="skills">
           <i class="fab fa-sketch skill-icon"></i>
           <h4>ウェブ　デザイン</h4>
           <div class="underline"></div>
@@ -248,15 +248,15 @@
            <li class="btn">Figma</li>
            <li class="btn">Adobe Creative Cloud</li>
           </ul> 
-        </article>
-        <article class="skills">
+        </div>
+        <div class="skills">
           <i class="fab fa-android skill-icon"></i>
           <h4>その他</h4>
           <div class="underline"></div>
            <p>有機野菜を育てること</p>
            <p>整合 = アイデア + 美 + 創作</p>
            <p>お茶会で今ここへ</p>
-        </article>
+        </div>
       </div>
       <div class="tools">
           <i class="fas fa-tools skill-icon"></i>
@@ -272,51 +272,46 @@
     </section>
     <!-- end of skills -->
     <!-- about -->
-        <section id="about">
-          <div class="section-center about-center">
-            <!-- about img -->
-            <article class="about-img">
-              <img
+    <section id="about">
+      <div class="section-center about-center">
+        <!-- about img -->
+          <div class="about-img">
+            <img
                 src="./images/ryoko-2021-ollie.png"
                 class="hero-photo"
                 alt="about img"
               />
-            </article>
-            <!-- about info -->
-            <article class="about-info">
-              <!-- section title -->
-              <div class="section-title about-title">
+          </div>
+          <div class="about-info">
+            <div class="section-title about-title">
                 <h2>about</h2>
                 <div class="underline"></div>
                 <h2>Ryoko Yamamoto</h2>
-              </div>
-              <!--end of section title -->
-              <p>
+            </div>
+            <p>
                 ここ十数年程、アメリカのワシントンD.C.にて環境教育プログラムの設計と運営に携わってきました。<br> 
                 周囲の環境やスキルセットは異なるものの、ウェブサイト上での相互の繋がり合いをしっかりとした基礎からプログラムしている内に、これってもしかしてエコシステムの働きと似ているのではということに気付きました。<br><br>
                 ちょうどいいメッセージは種子のようなもの。機能的で見た目にもしゃんとしたサイトを構築しておくことで、ビジネス、お仕事、ポロジェクトが豊富な実りを挙げられるようにお約束します。
-              </p>
-              <p>
+            </p>
+            <p>
                 週末は森の渓流近くにハンモックを吊るしたり、息子と共にピスタチオ色の自転車に乗って市内を探索したり、旅行先で食したレシピを再現したりしています。<br>
                 お気軽に日本語でお問い合わせください。<br><br>山本　涼子 
-              </p>
+            </p>
               <a href="contact.html" class="btn">ご連絡はこちらから</a>
               <a href="https://drive.google.com/file/d/1WVrlHzjt8cUtvmgqzYnhxh2Hl_3c2ocn/view?usp=sharing" class="btn" target="_blank">履歴書ダウンロード（英語）</a>
-            </article>
+            </div>
           </div>
-        </section>
+    </section>
     <!-- end of about -->
     <!-- timeline -->
     <section class="section timeline">
-      <!-- section title -->
-      <div class="section-title">
-        <h2>timeline</h2>
-        <div class="underline"></div>
-      </div>
-      <!--end of section title -->
-      <div class="section-center timeline-center">
+       <div class="section-title">
+         <h2>timeline</h2>
+         <div class="underline"></div>
+       </div>
+       <div class="section-center timeline-center">
         <!-- single timeline item -->
-        <article class="timeline-item">
+        <div class="timeline-item">
           <h4>2021</h4>
           <p>
             リモートワークができるように計画中
@@ -324,10 +319,10 @@
           <span class="milestone">
             <i class="fas fa-home"></i>
           </span>
-        </article>
+        </div>
         <!-- end of  single timeline item -->
         <!-- single timeline item -->
-        <article class="timeline-item">
+        <div class="timeline-item">
           <h4>2020</h4>
           <p>
             基本的なウェブプログラミングスキル習得
@@ -335,10 +330,10 @@
           <span class="milestone">
             <i class="fas fa-code"></i>
           </span>
-        </article>
+        </div>
         <!-- end of  single timeline item -->
         <!-- single timeline item -->
-        <article class="timeline-item">
+        <div class="timeline-item">
           <h4>2016</h4>
           <p>
             チャータースクール勤務傍ら自営業を手がける
@@ -346,10 +341,10 @@
           <span class="milestone">
             <i class="fas fa-seedling"></i>
           </span>
-        </article>
+        </div>
         <!-- end of  single timeline item -->
         <!-- single timeline item -->
-        <article class="timeline-item">
+        <div class="timeline-item">
           <h4>2012</h4>
           <p>
             スクールガーデンの設計と運営
@@ -357,10 +352,10 @@
           <span class="milestone">
             <i class="fas fa-school"></i>
           </span>
-        </article>
+        </div>
         <!-- end of  single timeline item -->
         <!-- single timeline item -->
-        <article class="timeline-item">
+        <div class="timeline-item">
           <h4>2008</h4>
           <p>
             子育て中に園芸とランドスケープデザインを学ぶ
@@ -368,10 +363,10 @@
           <span class="milestone">
             <i class="fas fa-leaf"></i>
           </span>
-        </article>
+        </div>
         <!-- end of  single timeline item -->
         <!-- single timeline item -->
-        <article class="timeline-item">
+        <div class="timeline-item">
           <h4>2005</h4>
           <p>
             数年日本の企業と非営利団体で働いた後、アメリカに移住
@@ -379,7 +374,7 @@
           <span class="milestone">
             <i class="fas fa-flag-usa"></i>
           </span>
-        </article>
+        </div>
         <!-- end of  single timeline item -->
       </div>
     </section>
@@ -421,18 +416,8 @@
           </a>
         </li>
         <li>
-          <a href="" class="social-icon">
-            <i class=""></i>
-          </a>
-        </li>
-        <li>
           <a href="https://github.com/waendesignco" class="social-icon" target="_blank">
             <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="" class="social-icon">
-            <i class=""></i>
           </a>
         </li>
         <li>
