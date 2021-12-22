@@ -136,7 +136,6 @@ p {
   }
 }
 /*  global classes */
-
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
@@ -407,7 +406,6 @@ Hero
   border-radius: var(--radius);
   position: relative;
 }
-/* small screen without grid different setup */
 /*
 =============== 
 Projects
@@ -703,71 +701,7 @@ Connect
   );
   clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
 }
-/*
-=============== 
-Skills - in percentage, could be developed later
-===============
-*/
-/* @media screen and (min-width: 768px) {
-  .skills-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
-  }
-}
-.skills {
-  background: var(--clr-palette-3);
-}
-.skills h3 {
-  margin: 1.5rem 0;
-  color: var(--clr-primary-1);
-}
-.skill {
-  margin-bottom: 1.25rem;
-}
-.skill p {
-  margin-bottom: 0.5rem;
-  text-transform: capitalize;
-  color: var(--clr-primary-1);
-}
-.skill-container {
-  background: var(--clr-white);
-  height: 1rem;
-  width: 100%;
-  border-radius: var(--radius);
-  position: relative;
-}
-.skill-value {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--clr-primary-5);
-  height: 100%;
-  width: 50%;
-  border-radius: var(--radius);
-}
-.value-70 {
-  width: 70%;
-}
-.value-80 {
-  width: 80%;
-}
-.skill-text {
-  position: absolute;
-  top: -2rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-.skill-text-70 {
-  left: 70%;
-}
-.skill-text-80 {
-  left: 80%;
-}
-*/
+
 /*
 =============== 
 Timeline
@@ -927,15 +861,6 @@ Projects Page
   color: var(--clr-primary-5);
 }
 
-
-/*
-.project-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: var(--clr-primary-5);
-}
-*/
-
 .project-footer a {
   color: var(--clr-primary-5);
   text-transform: capitalize;
@@ -997,7 +922,6 @@ Single Project Page
   display: flex;
   justify-content: center;
 }
-
 /*
 =============== 
 Contact Page
@@ -1012,4 +936,3 @@ Contact Page
   text-decoration: none;
   transition: box-shadow .3s ease;
 }
-
