@@ -52,7 +52,7 @@
     <!-- sidebar -->
     <aside class="sidebar" id="sidebar">
       <div>
-        <button id="close-btn" class="close-btn">
+        <button id="close-btn" class="close-btn" aria-label="close sidebar">
           <i class="fas fa-times"></i>
         </button>
         <ul class="sidebar-links">
@@ -112,14 +112,13 @@
           </ul>
         </div>
         <div class="hero-img">
-          <img src="./images/ryoko-ollie.png" class="hero-photo" alt="ryoko yamamoto" />
+          <img src="./images/ryoko-ollie.png" class="hero-photo" alt="Ryoko Yamamoto" />
         </div>
       </div>
     </header>
     <!-- end of header -->
     <!-- projects -->
-    <section class="section projects">
-      <!-- section title -->
+    <section class="section projects" id="projects">
       <div class="section-title">
         <h2>latest projects</h2>
         <div class="underline"></div>
@@ -127,7 +126,6 @@
           Click image below to see more
         </p>
       </div>
-      <!--end of section title -->
       <div class="section-center projects-center">
         <!-- single project -->
         <a href="projects.html#accelerate" class="project-1">
@@ -224,12 +222,12 @@
           <h4>front end development</h4>
           <div class="underline"></div>
           <ul class="skill">
-           <li class="btn">HTML5</li>
-           <li class="btn">CSS3 Flexbox &amp; Grid</li>
-           <li class="btn">JavaScript</li>
-           <li class="btn">React</li>
-           <li class="btn">Responsive sites</li>
-           <li class="btn">Custom sites</li>
+           <li class="skill-btn">HTML5</li>
+           <li class="skill-btn">CSS3 Flexbox &amp; Grid</li>
+           <li class="skill-btn">JavaScript</li>
+           <li class="skill-btn">React</li>
+           <li class="skill-btn">Responsive sites</li>
+           <li class="skill-btn">Custom sites</li>
           </ul> 
         </div>
         <div class="skills">
@@ -237,8 +235,8 @@
           <h4>back end development</h4>
           <div class="underline"></div>
           <ul class="skill">
-           <li class="btn">PHP</li>
-           <li class="btn">Ruby</li>
+           <li class="skill-btn">PHP</li>
+           <li class="skill-btn">Ruby</li>
           </ul> 
         </div>
         <div class="skills">
@@ -246,8 +244,8 @@
           <h4>web design</h4>
           <div class="underline"></div>
           <ul class="skill">
-            <li class="btn">Figma</li>
-            <li class="btn">Adobe Creative Cloud</li>
+            <li class="skill-btn">Figma</li>
+            <li class="skill-btn">Adobe Creative Cloud</li>
           </ul> 
         </div>
         <div class="skills">
@@ -279,7 +277,7 @@
             <img
               src="./images/ryoko-2021-ollie.png"
               class="hero-photo"
-              alt="about Ryoko"
+              alt="Ryoko headshot"
             />
           </div>
           <div class="about-info">
@@ -295,7 +293,7 @@
             <p>
               On weekends, I’m often found in a hammock near a stream in the forest, exploring the city by a pistachio-colored bicycle with my family, whipping up travel-inspired recipes, indulging in a scoop (or two) of ice cream, or genuine Japanese macha in a hand-wheeled bowl.
             </p>
-            <a href="https://drive.google.com/file/d/1WVrlHzjt8cUtvmgqzYnhxh2Hl_3c2ocn/view?usp=sharing" class="btn" target="_blank">download resume</a>
+            <a href="https://drive.google.com/file/d/1GqfhNzR1F06b8r78RT3j80x62sWz_oFM/view?usp=sharing" class="btn" target="_blank">download resume</a>
           </div>
       </div>
     </section>
@@ -311,7 +309,7 @@
         <div class="timeline-item">
           <h4>2022</h4>
           <p>
-            Plan to be able to work remotely and globally
+            Work online remotely and globally
           </p>
           <span class="milestone">
             <i class="fas fa-home"></i>
@@ -377,7 +375,7 @@
     </section>
     <!--end of  timeline -->
     <!-- connect -->
-    <section class="connect">
+    <section class="connect" id="contact">
       <video
         controls
         autoplay
@@ -385,6 +383,7 @@
         loop
         class="video-container"
         poster="./images/project-1.jpeg"
+        aria-label="video has no sound"
       >
         <source src="./videos/coding.mp4" type="video/mp4" />
         Sorry, your browser does not support embedded videos
